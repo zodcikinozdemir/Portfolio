@@ -139,33 +139,83 @@ li a{
     padding: 14px 16px;
 }
 
-a:link { color: black; }
-a:visited { color: gray; }
-a:hover { color: pink; }
-a:hover:not(.active) {
-    background-color: #111;
+
+#container {
+        width: 980px;
+        margin: 0 auto;
 }
-a:active {
-    background-color: #111;
-	color: yellow;
+
+
+@media only screen and (max-width: 980px) {
+	#container {
+        width: 960px;
+        margin: 0 auto;
+	}
 }
-.active {
-	background-color: #4aaaa5;
+
+@media only screen and (max-width: 768px) {
+	#container {
+        margin: 100px auto;
+        padding: 20px;
+	}
+	#name {
+		margin: auto auto;
+		padding: 0px 0px 0px 0px;
+	}
+	#full {
+		clear: both;
+		width: 100%;
+		min-height: 100%;
+		margin: 10px auto;
+  	}
+	#main {
+		width: 100%;
+		padding: 20px;
+	}
+	#connect {
+		margin: 20px auto;
+		padding: 20px;
+	}
+	form {
+		width:75px;
+		float:left;
+		margin:0 auto;
+	}
+	
 }
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
-
-
-@media (max-width: @screen-xs-max) { ... }
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
-@media (min-width: @screen-lg-min) { ... }
+@media only screen and (max-width: 640px) {
+	#container {
+        	margin: 100px auto;
+        	background: #aaa;
+        	padding: 20px;
+	}
+	#name {
+		margin: auto auto;
+		padding: 0px 10px 0px 0px;
+	}
+	#full {
+		clear: both;
+		width: 100%;
+		margin: 10px auto;
+		min-height: 100%;
+	}
+	#main {
+		width: 100%;
+		padding: 20px;
+	}
+	
+	#name {
+		background:#FFFFFF; 
+		color: #4aaaa5;
+	}
+	#connect {
+		margin: 20px auto;
+		padding: 20px;
+	}
+	form {
+		width:75%;
+		float: left;
+		margin:0 auto;
+	}
+}
